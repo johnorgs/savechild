@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save child</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+	
+	.frame {
+  height: 505px;
+  width: 100%;
+  overflow: hidden;
+}
+.iframe {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+.zoomin img {
+  height: 505px;
+  width: 100%;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+
+
+.jframe {
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+}
+.zoomdn img {
+  height: 350px;
+  width: 350px;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+.zoomdn img:hover {
+  width: 400px;
+  height: 400px;
+}
+
+
+
+.zoomin img:hover {
+  width: 120%;
+  height: 600px;
+}
+.zoomup img {
+  height: 250px;
+  width: 100%;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+.zoomup img:hover {
+  width: 120%;
+  height: 300px;
+}
+		
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("pic1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("pp12.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("pp13.jpg");
+  min-height: 600px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px sss1;
+  color: #111;
+}
+
+
+
+body {margin:0;}
+.carousel-inner img {
+     -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); /* make all photos black and white */
+      width: 100%; /* Set width to 100% */
+      height:50px;
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    overflow: hidden;
+    background-color: #FFF8DC   ;
+    
+    top: 0;
+    width: 100%;
+    opacity:0.8;
+}
+
+li {
+    float: right;
+}
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 40px 30px;
+    text-decoration: none;
+    font-family: sss2;
+}
+@font-face
+{
+	font-family:sss1;
+	src:url(damion.ttf);
+}
+
+@font-face
+{
+	font-family:sss2;
+	src:url(leck.ttf);
+}
+
+@font-face
+{
+	font-family:sss;
+	src:url(allura.ttf);
+}
+span {
+    font-family:sss;
+}
+
+ /* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(555,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+p{font-family:sss2;}
+.logos{font-family:sss2;
+font-size:50px; text-decoration: none;}
+</style>
+</head>
+<body id="home" class="navbar">
+
+	  
+<ul  >
+<img src="http://www.savethechildren.org.uk/sites/all/themes/freshlime/ui/stc_logo.png" width="100px" height="100px" >
+<a class="logos" href="#home">Save the Child</a>
+ <li><a  href="#home"></a></li>
+<li><a  href="#home"></a></li>
+  <li><a  href="#end">About Me</a></li>
+  <li><a href="#pics">Extras</a></li>
+  <li><a href="#info">About</a></li>
+  <li><a href="#home">Home</a></li>
+
+</ul>
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+   
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="pic1.jpg" alt="New York" width="1200" height="50px">
+        <div class="carousel-caption">
+          <h3>Save Girl Child</h3>
+          <p>Woman gives birth to Civilization.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="pic2.jpg" alt="Chicago" width="1200" height="px">
+        <div class="carousel-caption">
+          <h3>Think</h3>
+          <p>Every Child is hero.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="pic3.jpg" alt="Los Angeles" width="1200" height="50px">
+        <div class="carousel-caption">
+          <h3>Future</h3>
+          <p>Children are the Future. Teach them and see them lead the way.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 200px;text-align: justify;"  id="info">
+	
+				<!--<i class="fa fa-angle-double-up" style="font-size:36px; margin-left:500px;" ></i>-->
+  <h3 style="text-align:center;">A happy Girl is Future of World</h3>
+  <div style="float:left; width:60%;">
+	  <div class="zoomin frame">
+<img src="pp9.jpg" alt="Los Angeles" width="100%" height="505px" style=" margin-bottom:10px;">
+</div>
+</div>
+<div style="float:left; width:39%; margin-left:5px; margin-bottom:10px;" >
+	<div class="zoomup iframe" style=" margin-bottom:5px;">
+<img src="pp2.png" alt="Los Angeles" width="100%" height="250px" >
+</div>
+<div class="zoomup iframe" style=" margin-bottom:5px;">
+<img src="pp3.jpg" alt="Los Angeles" width="100%" height="245px" >
+</div>
+</div>
+<div>
+<div>
+  <p>A Daughter is one of most Beautiful gifts this world has to give. Protect most precious thing in life . Give them wings to fly , not the pain to cry and die. A girl child always become blessing for the society and reason for the continuation of life in this world. We worship many female Goddesses at various festivals however never feel a little bit of kind to the women living in our home. Truly, the girls are pillars of the society. A small girl child can be a good daughter, a sister, a wife, a mother and other good relations in the future. If we kill them before taking birth or do not care after taking birth then how we will get a daughter, sister, wife or mother in future. <q>Save girl Child.</q></p>
+</div>
+</div>
+				<!--<i class="fa fa-angle-double-down" style="font-size:36px; margin-left:500px;" ></i>-->
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:75px;color: #f7f7f7;"><b><q>Smiles are soul's kisses</q></b></span>
+  </div>
+</div>
+
+<div style="position:relative;" id="pics">
+
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+   <!--<i class="fa fa-angle-double-up" style="font-size:36px; margin-left:600px;" ></i>-->
+   <br>
+	<img src='pp1.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;'  >
+	
+	<img src='pp10.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;' >
+	<img src='pp12.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;' >
+	<br>
+	<img src='pp4.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;'  >
+	<img src='pp5.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;' >
+	<img src='pp6.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;' >
+	<br>
+	<img src='pp7.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;'  >
+	<img src='pp8.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;' >
+	<img src='pp11.jpg' alt='error'  style='width:350px; height:350px; margin-left:20px; margin-bottom:20px;' >
+	<br>
+  <!--<i class="fa fa-angle-double-down" style="font-size:36px; margin-left:600px;" ></i>-->
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:55px;color: #f7f7f7;"><b>Save the Child</b></span>
+  </div>
+</div>
+
+<div style="position:relative;" id="end">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <!--<a  href="home"><i class="fa fa-angle-double-up" style="font-size:36px; margin-left:600px;" ></i></a>-->
+    <p>Created By : John Besra@2016 </p>
+	
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, a[href='#home'], a[href='#pics'],a[href='#about'],a[href='#end']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+
+
+</body>
+</html>

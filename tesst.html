@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:0;}
+
+ul.topnav {
+	
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav" id="myTopnav" position="fixed">
+	<img src="logo.png" width="100px" height="100px">
+  <li ><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  
+</ul>
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+  all four margins will be 15px 
+      </p>
+      
+      <p style="margin:10px 2%; border:1px solid black;">
+      top and bottom margin will be 10px, left and right margin will be 2% of the total width of the document. 
+      </p>
+      
+      <p style="margin: 10px 2% -10px; border:1px solid black;">
+      top margin will be 10px, left and right margin will be 2% of the total width of the document, bottom margin will be -10px
+      </p> 
+      
+      <p style="margin: 10px 2% -10px auto; border:1px solid black;">
+      top margin will be 10px, right margin will be 2% of the total width of the document, bottom margin will be -10px, left margin will be set by the browser 
+      </p>
+   
+		<h1>Hello <small>small</small>world</h1>
+		<p>Docu</p>
+		<h2>This is<br> heading 2</h2>
+		<h3>This is heading 3</h3>
+		<a href="https://www.tutorialspoint.com" target="_self"> <img src="logo.png" alt="Test Image" width="150" height="100"  border="3" align="right" />
+		</a>
+		
+		<hr>
+		
+		 <p style = "background-color:yellow;">
+      This text has a yellow background color.</p>
+      
+       <p style="letter-spacing:5px;">
+      This text is having space between letters.
+      </p>
+      
+      <p style="text-shadow:4px 4px 8px blue;">
+      If your browser supports the CSS text-shadow property, this text will have a blue shadow.
+      </p>
+      
+      
+		
+		<div class="example">Hello , World!</div>
+<blockquote>XHTML 1.0 is the W3C's first Recommendation for XHTML, following on from earlier work on HTML 4.01, HTML 4.0, HTML 3.2 and HTML 2.0.</blockquote>
+		<center><p style="font-family:arial; color:#FF0000;">NOW IS TIME</p></center>
+		<h4>This is <i>apple</i>heading 4</h4>
+		<h5>This is <u>aple</u> heading 5</h5>
+		<h6>This is heading 6</h6>
+		<p id="html">This para explains what is HTML <b>yes</b></p>
+<p id="css">This para explains <big>bigger</big>what is Cascading Style Sheet</p>
+
+<p>This is the example of <span style="color:green">span tag</span> and the <span style="color:red">div tag</span> alongwith CSS</p>
+<p>My best friend's name is  <abbr title="Abhishek">Abhy</abbr>.</p>
+<h3 title="Hello HTML!">Titled <strike>user</strike> Heading <mark>marked</mark>Tag Example</h3>
+
+<marquee direction="right">This text will scroll from left to right</marquee>
+<marquee direction="up">This text will scroll from bottom to up</marquee>
+
+<font face="Times New Roman" size="5">Times New Roman</font><br />
+<font face="Verdana" size="5">Verdana</font><br />
+<font face="Comic sans MS" size="5">Comic Sans MS</font><br />
+<font face="WildWest" size="5">WildWest</font><br />
+<font face="Bedrock" size="5">Bedrock</font><br />
+
+<form >
+User ID :  <input type="text" name="user_id" />
+<br>
+Password:  <input type="password" name="password" />
+<input type="checkbox" name="maths" value="on"> Maths
+<input type="checkbox" name="physics" value="on"> Physics
+<input type="radio" name="subject" value="maths"> Maths
+<input type="radio" name="subject" value="physics"> Physics
+<select name="dropdown">
+<option value="Maths" selected>Maths</option>
+<option value="Physics">Physics</option>
+</select>
+</form>
+
+<div id="menu" align="middle" >
+<a href="/index.htm">HOME</a> | 
+<a href="/about/contact_us.htm">CONTACT</a> | 
+<a href="/about/index.htm">ABOUT</a>
+</div>
+
+<address>388A, Road No 22, Jubilee Hills -  Hyderabad</address>
+
+<div id="content" align="left" bgcolor="white">
+<h5>Content Articles</h5>
+<p>Actual content goes here.....
+		<code>This is code.
+		#include<stdio.h>void main()</code> 
+		<q>I think I am wrong</q>
+</p>
+</div>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>This is documne ts tiltle</title>
+			<meta name="keywords" content="HTML, Meta Tags, Metadata" />
+			<meta name="description" content="Learning about Meta Tags." />
+			<meta name="revised" content="Tutorialspoint, 3/7/2014" />
+			<meta name="author" content="Mahnaz Mohtashim" />
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<meta http-equiv="Content-Script-Type" content="text/JavaScript" />
+			
+			 <style>
+         #grad2 {
+            height: 100px;
+            background: -webkit-linear-gradient(left, red , blue);
+            background: -o-linear-gradient(right, red, blue); 
+            background: -moz-linear-gradient(right, red, blue);
+            background: linear-gradient(to right, red , blue);
+         }
+      </style>
+			
+			
+			<style>
+         #grad1 {
+            height: 100px;
+            background: -webkit-linear-gradient(pink,green);
+            background: -o-linear-gradient(pink,green);
+            background: -moz-linear-gradient(pink,green); 
+            background: linear-gradient(pink,green); 
+         }
+      </style>
+			 <style type="text/css">
+         a:hover {color: #FFCC00}
+      </style>
+			 <style type = "text/css" media = "all">
+         body {
+            background-color: linen;
+         }
+         h1 {
+            color: maroon;
+            margin-left: 40px;
+         }
+      </style>
+      <style> div.slideIn { 
+      position: absolute; 
+      top: 200px; 
+      width: 100px; 
+      height: 100px; 
+      border: 1px solid black; 
+      animation-name: hide, slideIn;
+      animation-duration: 5s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: 1; 
+      -moz-animation-name: hide, slideIn;
+      -moz-animation-duration: 5s;
+      -moz-animation-timing-function: ease-in;
+      -moz-animation-iteration-count: 1; 
+      -webkit-animation-name: hide, slideIn;
+      -webkit-animation-duration: 5s;
+      -webkit-animation-timing-function: ease-in;
+      -webkit-animation-iteration-count: 1; 
+      -o-animation-name: hide, slideIn;
+      -o-animation-duration: 5s;
+      -o-animation-timing-function: ease-in;
+      -o-animation-iteration-count: 1; 
+      opacity: 1;
+  } 
+  div.slideIn.first {
+      left: 50px; 
+      animation-delay: 0s, 0s;
+      -moz-animation-delay: 0s, 0s;
+      -webkit-animation-delay: 0s, 0s;
+      -o-animation-delay: 0s, 0s;
+  }
+  div.slideIn.second {
+      left: 150px;
+      animation-delay: 0s, 2s;
+      -moz-animation-delay: 0s, 2s;
+      -webkit-animation-delay: 0s, 2s;
+      -o-animation-delay: 0s, 2s;
+  }
+  div.slideIn.third {
+      left: 250px;
+      animation-delay: 0s, 4s;
+      -moz-animation-delay: 0s, 4s;
+      -webkit-animation-delay: 0s, 4s;
+      -o-animation-delay: 0s, 4s;
+  }
+  @keyframes hide
+  { 
+      from { opacity: 0; } to { opacity: 0 }
+  }
+  @-moz-keyframes hide
+  { 
+      from { opacity: 0; } to { opacity: 0 }
+  }
+  @-webkit-keyframes hide
+  { 
+      from { opacity: 0; } to { opacity: 0 }
+  }
+  @-o-keyframes hide
+  { 
+      from { opacity: 0; } to { opacity: 0 }
+  }
+  @keyframes slideIn
+  { 
+        0% { opacity: 0; top: -100px; }
+        1% { opacity: 1; top: -100px; }
+      100% { opacity: 1; top:  200px; } 
+  } 
+  @-moz-keyframes slideIn
+  { 
+        0% { opacity: 0; top: -100px; }
+        1% { opacity: 1; top: -100px; }
+      100% { opacity: 1; top:  200px; } 
+  } 
+  @-webkit-keyframes slideIn
+  { 
+        0% { opacity: 0; top: -100px; }
+        1% { opacity: 1; top: -100px; }
+      100% { opacity: 1; top:  200px; } 
+  } 
+  @-o-keyframes slideIn
+  { 
+        0% { opacity: 0; top: -100px; }
+        1% { opacity: 1; top: -100px; }
+      100% { opacity: 1; top:  200px; } 
+  } </style>
+      
+			<style>
+
+.example {
+  border:1px solid #4a7d49;
+  color: red;
+}
+
+</style>
+		</head>
+		
+		
+		
+		<input type="button" onclick="Hello();" name="ok" value="OK"  />
+		
+		
+	<body bgcolor="yellow">
+		<div class="slideIn first">I slid in</div> 
+<div class="slideIn second">I'm 2nd</div> 
+<div class="slideIn third">I'm 3rd</div> 
+		<script type="text/javascript">
+function EventHandler(){
+   alert("I'm event handler!!");
+}
+</script>
+		
+		<script type="text/javascript">
+function Hello(){
+   alert("Hello, World");
+}
+</script>
+
+<table width="100%" border="0">
+  <tr valign="top">
+    <td bgcolor="#aaa" width="20%">
+      <b>Main Menu</b><br />
+      HTML<br />
+      PHP<br />
+      PERL...
+    </td>
+    <td bgcolor="#b5dcb3" height="200" width="60%">
+        Technical and Managerial Tutorials
+    </td>
+    <td bgcolor="#aaa" width="20%">
+      <b>Right Menu</b><br />
+      HTML<br />
+      PHP<br />
+      PERL...
+    </td>
+   </tr>
+<table>
+	
+	
+      <header role="banner">
+         <h1>HTML5 Document Structure Example</h1>
+         <p>This page should be tried in safari, chrome or Mozila.</p>
+      </header>
+      
+      <footer>
+         <p>Created by <a href="http://tutorialspoint.com/">Tutorials Point</a></p>
+      </footer>
+	
+	
+	
+	
+	<div style="width:100%">
+  <div style="background-color:#b5dcb3; width:100%">
+      <h1>This is Web Page Main title</h1>
+  </div>
+  <div style="background-color:#aaa; height:200px;width:100px;float:left;">
+      <div><b>Main Menu</b></div>
+      HTML<br />
+      PHP<br />
+      PERL...
+  </div>
+  <div style="background-color:#eee; height:200px;width:350px;float:left;">
+    <p>Technical and Managerial Tutorials</p>
+  </div>
+  <div style="background-color:#aaa; height:200px;width:100px;float:right;">
+      <div><b>Right Menu</b></div>
+      HTML<br />
+      PHP<br />
+      PERL...
+  </div>
+  <div style="background-color:#b5dcb3;clear:both">
+  <center>
+      Copyright © 2007 Tutorialspoint.com
+  </center>
+  </div>
+</div>
+
+
+
+
+
+
+<p onmouseover="EventHandler();">Bring your mouse here to see an alert</p>
+		
+		<h1>HTML Text Links <a name="top"></a></h1>
+		
+		
+		<table border="1" cellpadding="5" cellspacing="5" bordercolor="green" bgcolor="yellow">
+			<tr>
+<th>Name</th>
+<th>Salary</th>
+</tr>
+<tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+</table>
+<a href="https://www.tutorialspoint.com" target="_blank">Tutorials Point</a>
+		<table border="1" cellpadding="5" cellspacing="5" bordercolor="green" background="logo.png"  width="400" height="150">
+			<caption>This is the caption</caption>
+			<tr>
+<th>Name</th>
+<th>Salary</th>
+</tr>
+<tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+</table>
+
+ <ul type="circle">
+   <li>Beetroot</li>
+   <li>Ginger</li>
+   <li>Potato</li>
+   <li>Radish</li>
+   </ul>
+   
+   
+   <div id="grad1"></div>
+   
+   
+   <div style="background-color:red; width:300px; height:100px; position:relative; top:10px; left:80px; z-index:2">
+      </div>
+      
+      <div style="background-color:yellow; width:300px; height:100px; position:relative; top:-60px; left:35px; z-index:1;">
+      </div>
+      
+      <div style="background-color:green; width:300px; height:100px; position:relative; top:-220px; left:120px; z-index:3;">
+      </div>
+   
+   
+   <p style="width:400px; height:100px; border:1px solid red; padding:5px; margin:10px;">
+      This paragraph is 400pixels wide and 100 pixels high
+   </p>
+   
+   
+   <p style="padding: 15px; border:1px solid black;">
+      all four padding will be 15px 
+      </p> 
+   
+   <p style="padding-left: 15px; border:1px solid black;">
+      This is a paragraph with a specified left padding
+      </p>
+      
+      <p style="padding-left: 15%; border:1px solid black;">
+      This is another paragraph with a specified left padding in percent
+      </p>
+   
+    <p style="margin: 15px; border:1px solid black;"> 
+      all four margins will be 15px 
+      </p>
+      
+      <p style="margin:10px 2%; border:1px solid black;">
+      top and bottom margin will be 10px, left and right margin will be 2% of the total width of the document. 
+      </p>
+      
+      <p style="margin: 10px 2% -10px; border:1px solid black;">
+      top margin will be 10px, left and right margin will be 2% of the total width of the document, bottom margin will be -10px
+      </p> 
+      
+      <p style="margin: 10px 2% -10px auto; border:1px solid black;">
+      top margin will be 10px, right margin will be 2% of the total width of the document, bottom margin will be -10px, left margin will be set by the browser 
+      </p>
+   
+		<h1>Hello <small>small</small>world</h1>
+		<p>Docu</p>
+		<h2>This is<br> heading 2</h2>
+		<h3>This is heading 3</h3>
+		<a href="https://www.tutorialspoint.com" target="_self"> <img src="logo.png" alt="Test Image" width="150" height="100"  border="3" align="right" />
+		</a>
+		
+		<hr>
+		
+		 <p style = "background-color:yellow;">
+      This text has a yellow background color.</p>
+      
+       <p style="letter-spacing:5px;">
+      This text is having space between letters.
+      </p>
+      
+      <p style="text-shadow:4px 4px 8px blue;">
+      If your browser supports the CSS text-shadow property, this text will have a blue shadow.
+      </p>
+      
+      
+		
+		<div class="example">Hello , World!</div>
+<blockquote>XHTML 1.0 is the W3C's first Recommendation for XHTML, following on from earlier work on HTML 4.01, HTML 4.0, HTML 3.2 and HTML 2.0.</blockquote>
+		<center><p style="font-family:arial; color:#FF0000;">NOW IS TIME</p></center>
+		<h4>This is <i>apple</i>heading 4</h4>
+		<h5>This is <u>aple</u> heading 5</h5>
+		<h6>This is heading 6</h6>
+		<p id="html">This para explains what is HTML <b>yes</b></p>
+<p id="css">This para explains <big>bigger</big>what is Cascading Style Sheet</p>
+
+<p>This is the example of <span style="color:green">span tag</span> and the <span style="color:red">div tag</span> alongwith CSS</p>
+<p>My best friend's name is  <abbr title="Abhishek">Abhy</abbr>.</p>
+<h3 title="Hello HTML!">Titled <strike>user</strike> Heading <mark>marked</mark>Tag Example</h3>
+
+<marquee direction="right">This text will scroll from left to right</marquee>
+<marquee direction="up">This text will scroll from bottom to up</marquee>
+
+<font face="Times New Roman" size="5">Times New Roman</font><br />
+<font face="Verdana" size="5">Verdana</font><br />
+<font face="Comic sans MS" size="5">Comic Sans MS</font><br />
+<font face="WildWest" size="5">WildWest</font><br />
+<font face="Bedrock" size="5">Bedrock</font><br />
+
+<form >
+User ID :  <input type="text" name="user_id" />
+<br>
+Password:  <input type="password" name="password" />
+<input type="checkbox" name="maths" value="on"> Maths
+<input type="checkbox" name="physics" value="on"> Physics
+<input type="radio" name="subject" value="maths"> Maths
+<input type="radio" name="subject" value="physics"> Physics
+<select name="dropdown">
+<option value="Maths" selected>Maths</option>
+<option value="Physics">Physics</option>
+</select>
+</form>
+
+<div id="menu" align="middle" >
+<a href="/index.htm">HOME</a> | 
+<a href="/about/contact_us.htm">CONTACT</a> | 
+<a href="/about/index.htm">ABOUT</a>
+</div>
+
+<address>388A, Road No 22, Jubilee Hills -  Hyderabad</address>
+
+<div id="content" align="left" bgcolor="white">
+<h5>Content Articles</h5>
+<p>Actual content goes here.....
+		<code>This is code.
+		#include<stdio.h>void main()</code> 
+		<q>I think I am wrong</q>
+</p>
+</div>
+
+		<pre>
+				function testFunction( strText ){
+				alert (strText)
+				}
+				#include<stdio.h>
+					void main()
+		</pre>
+		<p align="left">This is <sup>aplpe</sup> left aligned</p>
+<p  align="center">This is <tt>yo bae.</tt>center aligned</p>
+<p align="right">This is right <sub>pow</sub> aligned</p>
+<a href="start.html#top">Go to the Top</a>
+
+<input list="tutorials" />
+<datalist id="tutorials">
+  <option value="Java">
+  <option value="ASP">
+  <option value="PHP">
+  <option value="Ruby">
+  <option value="jQuery">
+</datalist>
+
+
+<div id="grad2"></div>
+
+
+
+<table width="100%" >
+  <tr>
+    <td colspan="2" bgcolor="#b5dcb3">
+      <h1>This is Web Page Main title</h1>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td bgcolor="#aaa" width="50">
+      <b>Main Menu</b><br />
+      HTML<br />
+      PHP<br />
+      PERL...
+    </td>
+    <td bgcolor="#eee" width="100" height="200">
+        Technical and Managerial Tutorials
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#b5dcb3">
+      <center>
+      Copyright © 2007 Tutorialspoint.com
+      </center>
+    </td>
+  </tr>
+</table>
+
+<a href="http://www.w3schools.com/html" accesskey="h">HTML tutorial</a><br>
+<a href="http://www.w3schools.com/css" accesskey="c">CSS tutorial</a>
+
+<p>The accesskey attribute specifies a shortcut key to activate/focus an element.</p>
+<p><strong>Note:</strong> The shortcut is varying in different browsers:</p>
+<ul>
+    <li>IE, Chrome, Safari, Opera 15+: [ALT] + <em>accesskey</em></li>
+    <li>Opera prior version 15: [SHIFT] [ESC] + <em>accesskey</em></li>
+    <li>Firefox: [ALT] [SHIFT] + <em>accesskey</em></li>
+</ul>
+
+
+<p contenteditable="true" spellcheck="true">This is a praggagraph. It is editable. Try to change the text.</p>
+
+<p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+
+<!--
+      <form action="/cgi-bin/html5.cgi" method="get" name="myform">
+         Enter a value : <input type="text" name="newinput" />
+         <input type="button" value="Result"  onclick="showResult();" />
+         <output name="result"></output>
+      </form>
+	
+	
+	<script type="text/javascript">
+      function showResult()
+      {
+         x = document.forms["myform"]["newinput"].value;
+         document.forms["myform"]["result"].value=x;
+      }
+   </script>
+-->
+
+
+      <script type="text/javascript">
+         if( localStorage.hits ){
+            localStorage.hits = Number(localStorage.hits) +1;
+         }
+         
+         else{
+            localStorage.hits = 1;
+         }
+         document.write("Total Hits :" + localStorage.hits );
+      </script>
+		
+      <p>Refresh the page to increase number of hits.</p>
+      <p>Close the window and open it again and check the result.</p>
+
+<script type="text/javascript">
+		
+         var db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
+         var msg;
+			
+         db.transaction(function (tx) {
+            tx.executeSql('CREATE TABLE IF NOT EXISTS LOGS (id unique, log)');
+            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (1, "foobar")');
+            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (2, "logmsg")');
+            msg = '<p>Log message created and row inserted.</p>';
+            document.querySelector('#status').innerHTML =  msg;
+         });
+
+         db.transaction(function (tx) {
+            tx.executeSql('SELECT * FROM LOGS', [], function (tx, results) {
+               var len = results.rows.length, i;
+               msg = "<p>Found rows: " + len + "</p>";
+               document.querySelector('#status').innerHTML +=  msg;
+					
+               for (i = 0; i < len; i++){
+                  msg = "<p><b>" + results.rows.item(i).log + "</b></p>";
+                  document.querySelector('#status').innerHTML +=  msg;
+               }
+            }, null);
+         });
+			
+      </script>
+	</body>
+</html>
